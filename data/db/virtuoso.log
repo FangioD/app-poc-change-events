@@ -1,0 +1,75 @@
+
+		Fri Feb 11 2022
+11:02:48 OpenLink Virtuoso Universal Server
+11:02:48 Version 07.20.3233-pthreads for Linux as of Nov 24 2021
+11:02:48 uses OpenSSL 1.0.2n  7 Dec 2017
+11:02:48 uses parts of PCRE, Html Tidy
+11:02:48 SQL Optimizer enabled (max 1000 layouts)
+11:02:48 Compiler unit is timed at 0.000238 msec
+11:02:50 Checkpoint started
+11:02:50 Roll forward started
+11:02:50 Roll forward complete
+11:02:50 Checkpoint started
+11:02:50 Checkpoint finished, log reused
+11:02:50 Checkpoint started
+11:02:50 Checkpoint finished, log reused
+11:02:50 Checkpoint started
+11:02:50 Checkpoint finished, log reused
+11:02:50 Checkpoint started
+11:02:50 Checkpoint finished, log reused
+11:02:50 Checkpoint started
+11:02:50 Checkpoint finished, log reused
+11:02:50 PL LOG: Installing Virtuoso Conductor version 1.00.8823 (DAV)
+11:02:50 PL LOG: Installing with dependencies Virtuoso Conductor version 1.00.8823/2021-11-24 14:19 (DAV)
+11:02:50 Checkpoint started
+11:02:50 Checkpoint finished, log reused
+11:02:59 Checkpoint started
+11:02:59 Checkpoint finished, log reused
+11:02:59 PL LOG: Installation with dependencies complete
+11:02:59 Checkpoint started
+11:02:59 Checkpoint finished, log reused
+11:02:59 HTTP/WebDAV server online at 27015
+11:02:59 Server online at 1111 (pid 19)
+11:02:59 Server received signal 15
+11:02:59 Initiating quick shutdown
+11:02:59 Server shutdown complete
+
+		Fri Feb 11 2022
+11:02:59 OpenLink Virtuoso Universal Server
+11:02:59 Version 07.20.3233-pthreads for Linux as of Nov 24 2021
+11:02:59 uses OpenSSL 1.0.2n  7 Dec 2017
+11:02:59 uses parts of PCRE, Html Tidy
+11:02:59 Database version 3126
+11:02:59 SQL Optimizer enabled (max 1000 layouts)
+11:03:00 Compiler unit is timed at 0.000099 msec
+11:03:00 Roll forward started
+11:03:00 Roll forward complete
+11:03:01 Checkpoint started
+11:03:01 Checkpoint finished, log reused
+11:03:01 HTTP/WebDAV server online at 8890
+11:03:01 Server online at 1111 (pid 1)
+11:13:01 ERRS_0 01V01 QW004 Incompatible types VARCHAR (182) and INTEGER (189) in COALESCE for coalesce_ret and <constant>
+11:13:01 ERRS_0 01V01 QW004 Incompatible types VARCHAR (182) and INTEGER (189) in := for coalesce_ret and <constant>
+11:13:01 ERRS_0 01V01 QW004 Incompatible types VARCHAR (182) and INTEGER (189) in COALESCE for coalesce_ret and <constant>
+11:13:01 ERRS_0 01V01 QW004 Incompatible types VARCHAR (182) and INTEGER (189) in := for coalesce_ret and <constant>
+12:03:02 Checkpoint started
+12:03:02 Checkpoint finished, log reused
+13:03:03 Checkpoint started
+13:03:03 Checkpoint finished, log reused
+14:03:04 Checkpoint started
+14:03:04 Checkpoint finished, log reused
+
+		Fri Feb 11 2022
+14:30:08 OpenLink Virtuoso Universal Server
+14:30:08 Version 07.20.3233-pthreads for Linux as of Nov 24 2021
+14:30:08 uses OpenSSL 1.0.2n  7 Dec 2017
+14:30:08 uses parts of PCRE, Html Tidy
+14:30:08 Database version 3126
+14:30:08 SQL Optimizer enabled (max 1000 layouts)
+14:30:09 Compiler unit is timed at 0.000106 msec
+14:30:10 Roll forward started
+14:30:10 Roll forward complete
+14:30:10 Checkpoint started
+14:30:10 Checkpoint finished, log reused
+14:30:12 HTTP/WebDAV server online at 8890
+14:30:12 Server online at 1111 (pid 1)

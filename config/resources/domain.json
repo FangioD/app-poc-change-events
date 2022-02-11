@@ -1,0 +1,26 @@
+{
+  "version": "0.1",
+  "prefixes": {
+    "schema": "http://schema.org/"
+  },
+  "resources": {
+    "books": {
+      "class": "schema:Book",
+      "new-resource-base": "http://mu.semte.ch/books/",
+      "attributes": {
+        "title": {
+          "type": "string",
+          "predicate": "schema:name"
+        },
+        "abstract": {
+          "type": "string",
+          "predicate": "schema:abstract"
+        },
+        "isbn": {
+          "type": "string",
+          "predicate": "schema:isbn"
+        }
+      }
+    }
+  }
+}
