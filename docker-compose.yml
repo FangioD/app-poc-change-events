@@ -16,6 +16,13 @@ services:
     volumes:
       - ./config/dispatcher:/config
   database:
+    image: semtech/mu-authorization:0.6.0-beta.5
+    environment:
+      MU_SPARQL_ENDPOINT: "http://triplestore:8890/sparql"
+      LOG_INCOMING_SPARQL_QUERIES: "on"
+    volumes:
+      - ./config/authorization:/config
+  triplestore:
     image: redpencil/virtuoso:1.0.0
     environment:
       SPARQL_UPDATE: "true"
@@ -25,9 +32,34 @@ services:
     volumes:
       - ./data/db:/data
       - ./config/virtuoso/virtuoso.ini:/data/virtuoso.ini
+  deltanotifier:
+    image: semtech/mu-delta-notifier:0.1.0
+    volumes:
+      - ./config/delta:/config
+    environment:
+      DEBUG_DELTA_SEND: "on"
+      DEBUG_TRIPLE_MATCHES_SPEC: "on"
+      NODE_ENV: "development"
+    ports:
+      - "8888:80"
+      - "9229:9229"
+  migrations:
+    image: semtech/mu-migrations-service
+    links:
+      - triplestore:database
+    volumes:
+        - ./config/migrations:/data/migrations
   resource:
     image: semtech/mu-cl-resources:1.20.0
     links:
       - database:database
     volumes:
       - ./config/resources:/config
+  changeevents:
+    image: semtech/mu-javascript-template:1.5.0-beta.4
+    links:
+      - database:database
+    volumes:
+      - "/home/fangio/ABB/change-events/:/app"
+    environment:
+      NODE_ENV: "development"
