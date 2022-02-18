@@ -16,7 +16,7 @@ services:
     volumes:
       - ./config/dispatcher:/config
   database:
-    image: semtech/mu-authorization:0.6.0-beta.5
+    image: semtech/mu-authorization:feature-share-mu-session-id-in-delta
     environment:
       MU_SPARQL_ENDPOINT: "http://triplestore:8890/sparql"
       LOG_INCOMING_SPARQL_QUERIES: "on"
@@ -43,6 +43,10 @@ services:
     ports:
       - "8888:80"
       - "9229:9229"
+  registration:
+    image: semtech/mu-registration-service:2.6.0
+    links:
+      - database:database
   migrations:
     image: semtech/mu-migrations-service
     links:

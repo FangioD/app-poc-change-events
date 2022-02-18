@@ -15,6 +15,10 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://resource/books/"
   end
 
+  match "/accounts/*path", @json do
+    Proxy.forward conn, path, "http://registration/accounts/"
+  end
+
   # Run `docker-compose restart dispatcher` after updating
   # this file.
 

@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  deltanotifier:
+    image: semtech/mu-delta-notifier:0.1.0
+    volumes:
+      - ./config/delta:/config
+      - /home/fangio/ABB/delta-notifier:/app
+    environment:
+      DEBUG_DELTA_SEND: "on"
+      DEBUG_TRIPLE_MATCHES_SPEC: "on"
+      NODE_ENV: "development"
+    ports:
+      - "8888:80"
+      - "9229:9229"  
